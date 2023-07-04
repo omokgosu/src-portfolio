@@ -1,0 +1,35 @@
+.main{
+    padding: 300px 0;
+}
+.mainInner{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.mainInner h2{
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+}
+.mainInner p{
+    font-size: 32px;
+    font-weight: 100;
+    color: #fff;
+    margin: 15px 0 50px 0;
+}
+.mainInner ul{
+    display: flex;
+    gap: 24px;
+}
+.mainInner ul li{
+    width: 260px;
+    background: linear-gradient(180deg, #3948CA 0%, #262FFF 100%, #000AFF 100%);
+    border-radius: 12px;
+}
+.mainInner ul li a{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}

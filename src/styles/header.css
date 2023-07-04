@@ -1,0 +1,40 @@
+.header{
+    padding: 20px 0;
+}
+.headerInner{
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerInner h1{
+    width: 36px;
+    height: 38px;
+    background: url(../../public/Logo.png) no-repeat center/cover;
+}
+.headerInner nav ul{
+    display: flex;
+    gap: 120px;
+    font-size: 16px;
+    color: #fff;
+}
+.sns{
+    display: flex;
+    gap: 10px;
+}
+.sns li{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+.sns li:nth-child(1){
+    background: url(../../public/assets/icons/sns/instagram.svg);
+}
+.sns li:nth-child(2){
+    background: url(../../public/assets/icons/sns/facebook.svg);
+}
+.sns li:nth-child(3){
+    background: url(../../public/assets/icons/sns/youtube.svg);
+}
