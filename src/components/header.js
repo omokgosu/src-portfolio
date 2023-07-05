@@ -6,6 +6,7 @@ export default function Header() {
         <div className="headerInner">
             <h1><span className="hidden">SRC 로고</span></h1>
             <nav>
+                <h2 className="hidden">네비게이션 영역</h2>
                 <ul>
                     <li>sample</li>
                     <li>sample</li>

@@ -1,0 +1,36 @@
+.Sustain{
+    padding: 150px 0;
+    text-align: center;
+}
+.SustainInner{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.SustainInfo{
+    padding: 100px 0;
+    background-color: #2e2e3f;
+    border-radius: 30px;
+}
+.Sustain ul{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    font-size: 16px;
+}
+.Sustain ul span{
+    position: relative;
+}
+.Sustain ul span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    transform: translate(-100%,-50%);
+    width: 80px;
+    padding-bottom: 1px;
+    border-bottom: solid 2px #fff;
+}
+.Sustain ul li:last-child span::before{
+    border-bottom: dashed 2px #fff;
+}

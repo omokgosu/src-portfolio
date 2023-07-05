@@ -24,10 +24,12 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+    box-sizing: border-box;
 }
 body{
     background: #000;
     font-family: 'Pretendard-Regular';
+    color: #fff;
 }
 ol, ul {
 	list-style: none;
@@ -53,6 +55,11 @@ a{
     text-decoration: none;
     color: #fff;
 }
+button{
+    border: none;
+    background: none;
+    padding: 0;
+}
 .hidden{
     position: absolute;
     width: 1px;
@@ -64,4 +71,15 @@ a{
     margin: -1px;
     clip: rect(0,0,0,0);
     clip-path: inset(50%);
+}
+
+
+/* 공통 style css */
+h3{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,229,244,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

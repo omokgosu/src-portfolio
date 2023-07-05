@@ -5,10 +5,12 @@
     max-width: 1400px;
     margin: 0 auto;
 }
-.mainInner h2{
+.mainInner h3{
     font-size: 64px;
     font-weight: 700;
-    color: #fff;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,229,244,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .mainInner p{
     font-size: 32px;
