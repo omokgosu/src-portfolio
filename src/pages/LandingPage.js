@@ -4,8 +4,6 @@ import Howto from "../components/howTo";
 import RoadMap from "../components/roadmap";
 import Sustain from "../components/sustain";
 import Team from "../components/team";
-import Last from "../components/Last";
-import Footer from "../components/footer";
 
 export default function LandingPage() {
     return (
@@ -16,8 +14,6 @@ export default function LandingPage() {
             <RoadMap />
             <Sustain />
             <Team />
-            <Last />
-            <Footer />
       </div>
     );
   }
