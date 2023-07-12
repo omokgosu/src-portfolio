@@ -1,48 +1,173 @@
-.car{
-    position: absolute;
-    top: 0;
-    left: 20%;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-    z-index: -1;
+@keyframes roadSide{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
+@keyframes roadMiddle {
+    from{
+        height: 0%;
+    }
+    to{
+        height: 8%;
+    }
+}
+@keyframes title {
+    to{
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes mainInfo {
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+@keyframes car1 {
+    to{
+        top: -100%;
+    }
+}
+@keyframes car2 {
+    to{
+        top: -100%;
+    }
 }
 .main{
-    position: relative;
-    padding: 300px 0;
+    margin-top: 100px;
+    padding: 100px 0;
 }
 .mainInner{
+    position: relative;
     max-width: 1400px;
     margin: 0 auto;
 }
-.mainInner h3{
-    font-size: 64px;
-    font-weight: 700;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,229,244,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.mainAni{
+    position: relative;
+    margin-bottom: 20px;
+    height: 70vh;
 }
-.mainInner p{
-    font-size: 32px;
-    font-weight: 100;
-    color: #fff;
-    margin: 15px 0 50px 0;
-}
-.mainInner ul{
+.mainAni .road{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
+    justify-content: space-between;
+}
+.mainAni .road .roadSide{
+    width: 4px;
+    height: 0%;
+    background-color: #fff;
+    animation: roadSide 0.5s forwards;
+}
+.mainAni .road .roadMiddle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainAni .road .roadMiddle li{
+    width: 4px;
+    height: 0%;
+    background-color: #fff;
+    animation: roadMiddle 0.5s 0.5s forwards;
+}
+.mainTitle{
+    width: 50%;
+    text-align: center;
+}
+.mainTitle h3{
+    position: relative;
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 0.432px;
+    left: -100px;
+    opacity: 0;
+    animation-name: title;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+.mainTitle li:nth-child(1) h3{
+    animation-delay: 1s;
+}
+.mainTitle li:nth-child(2) h3{
+    animation-delay: 1.2s;
+}
+.mainTitle li:nth-child(3) h3{
+    animation-delay: 1.4s;
+}
+.mainInfo{
+    display: flex;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    animation: mainInfo .5s 1.4s forwards;
+}
+.mainInfo p{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+.mainAppBtn{
+    display: flex;
+    justify-content: center;
     gap: 24px;
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
 }
-.mainInner ul li{
-    width: 260px;
-    background: linear-gradient(180deg, #3948CA 0%, #262FFF 100%, #000AFF 100%);
-    border-radius: 12px;
+.mainAppBtn li{
+    width: 240px;
+    border-radius: 30px;
+    border: solid 2px #fff;
+    transition: all .5s;
 }
-.mainInner ul li a{
+.mainAppBtn li:hover{
+    background-color: #fff;
+}
+.mainAppBtn li a{
     display: flex;
     justify-content: center;
     gap: 8px;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 24px;
     font-weight: 600;
+    transition: all .5s;
+}
+.mainAppBtn li:hover a{
+    color: #000;
+}
+.carAnimaition{
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    z-index: -1;
+}
+.carAnimaition li{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.carAnimaition li:first-child img{
+    position: relative;
+    top: 100%;
+    width: 90%;
+    animation: car2 6s 6s linear infinite;
+}
+.carAnimaition li:last-child img{
+    position: relative;
+    top: 100%;
+    width: 40%;
+    animation: car1 6s 2.9s linear infinite;
 }

@@ -25,10 +25,9 @@ export default function Howto() {
     return (
         <section className="howto">
             <div className="howtoInner">
-                <h3>How to</h3>
+                <h3 className="hidden">How to</h3>
                 <div className="howtoLayout">
                     <div className="howtoTab">
-                        <p>HOW TO</p>
                         <ul>
                             {
                                 Data &&

@@ -1,5 +1,6 @@
 import Header from "../components/header";
 import Main from "../components/main";
+import Typo from "../components/typo";
 import Howto from "../components/howTo";
 import RoadMap from "../components/roadmap";
 import Sustain from "../components/sustain";
@@ -10,6 +11,7 @@ export default function LandingPage() {
       <div className="wrap">
             <Header />
             <Main />
+            <Typo />
             <Howto />
             <RoadMap />
             <Sustain />

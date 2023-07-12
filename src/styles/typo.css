@@ -1,0 +1,48 @@
+.typo{
+    padding: 100px 0;
+}
+.typoInner{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.typoInner h3{
+    font-size: 96px;
+    font-weight: 400;
+    color: #d57373;
+    line-height: 120%;
+    margin: 100px 0 50px 0;
+    transition: all .3s .3s;
+
+    position: relative;
+    left: -100px;
+    opacity: 0;
+}
+.typo.on .typoInner h3{
+    left: 0;
+    opacity: 1;
+}
+.typoInner p{
+    font-size: 60px;
+    position: relative;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: .3s;
+}
+.typoInner p:first-child{
+    left: -100px;
+}
+.typo.on .typoInner p:first-child{
+    left: 0;
+    opacity: 1;
+}
+.typoInner p:last-child{
+    line-height: 100%;
+    text-align: end;
+
+    right: -100px;
+}
+.typo.on .typoInner p:last-child{
+    right: 0;
+    opacity: 1;
+    transition-delay: .8s;
+}
