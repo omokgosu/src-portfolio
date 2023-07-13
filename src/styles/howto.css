@@ -1,108 +1,68 @@
 .howto{
     margin: 150px 0;
 }
-.howtoInner{
-    max-width: 1600px;
-    margin: 0 auto;
-    text-align: center;
-}
 .howtoLayout{
     position: relative;
-    height: 800px;
-    padding: 0 8%;
-    text-align: start;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
-.howtoLayout::after{
-    content: '';
+.howtoLayout .textFix{
     position: absolute;
-    width: 60%;
-    height: 100%;
-    right: 0;
-    top: 0;
-    border-radius: 35px;
-    background: #212035;
-    box-shadow: 0px 4px 12px 0px rgba(20, 67, 122, 0.20);
-    z-index: -1;
+    width: 30%;
+    top: 50vh;
+    left: 10%;
+    transform: translateY(-50%);
 }
-.howtoLayout::before{
-    content: '';
+.howtoLayout .textFix.active{
+    position: fixed;
+}
+.howtoLayout .textFix.finish{
     position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 35px;
-    border-radius: 35px;
-    background: linear-gradient(90deg, #2E2E3F 2.79%, rgba(83, 80, 128, 0.00) 100%);
-    box-shadow: 0px 4px 12px 0px rgba(20, 67, 122, 0.20);
-    z-index: -1;
+    bottom: 50vh;
+    transform: translateY(50%);
+    top: auto;
 }
-.howtoTab p{
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 50px;
-}
-.howtoTab li{
-    position: relative;
-    margin-bottom: 36px;
-    padding-left: 30px;
-}
-.howtoTab li::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 5px;
-    width: 4px;
-    height: 20px;
-    background: transparent;
-    transition: all .3s;
-}
-.howtoTab li.active::before,
-.howtoTab li:hover::before{
-    background: #0066ff;
-}
-.howtoTab li:last-child{
-    margin-bottom: 0;
-}
-.howtoTab li button{
-    font-size: 28px;
-    font-weight: 500;
-    color: #fff;
-    transition: all .3s;
-}
-.howtoTab li.active button,
-.howtoTab li:hover button{
-    color: #0066FF;
-}
-.howtoApp{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.howtoApp img{
-    width: 343px;
-}
-.howtoLayout dl{
-    width: 370px;
-}
-.howtoLayout dl dt{
+.howtoLayout h4{
     display: inline-block;
-    font-size: 64px;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,229,244,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    margin-bottom: 24px;
-    padding-bottom: 24px;
-    border-bottom: solid 2px #fff;
+    font-size: 56px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #fff;
+    font-weight: 400;
 }
-
-.howtoLayout dl dd{
-    font-family: 'Inter', sans-serif;
+.howtoLayout p{
     font-size: 24px;
+}
+.howtoLayout ul li{
+    position: relative;
+    height: 100vh;
+}
+.howtoLayout ul img{
+    position: absolute;
+    left: 45%;
+    top: 50%;  
+    transform: translateY(-50%);
+    width: 45%;
+}
+.howtoLayout ul li:last-child img{
+    left: 65%;
+    width: 15%;
+}
+.howtoBack{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 100px;
+    left: 50%;
+    bottom: auto;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    background: url(../../public/assets/images/howto/howto_back.svg) no-repeat top center;
+}
+.howtoBack.active{
+    position: fixed;
+}
+.howtoBack.finish{
+    position: absolute;
+    bottom: -100px;
+    top: auto;
 }

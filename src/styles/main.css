@@ -163,11 +163,11 @@
     position: relative;
     top: 100%;
     width: 90%;
-    animation: car2 6s 6s linear infinite;
+    animation: car2 6s 5s linear infinite;
 }
 .carAnimaition li:last-child img{
     position: relative;
     top: 100%;
     width: 40%;
-    animation: car1 6s 2.9s linear infinite;
+    animation: car1 6s 2s linear infinite;
 }

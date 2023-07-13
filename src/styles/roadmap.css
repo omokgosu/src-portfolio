@@ -4,8 +4,7 @@
 }
 .RoadMapList{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 .RoadMapList > li{
     position: relative;
@@ -21,6 +20,9 @@
     height: 420px;
     margin-bottom: 80px;
     text-align: center;
+}
+.RoadMapList > li:nth-child(even){
+   align-self: flex-end;
 }
 .RoadMapIcon{
     position: absolute;
@@ -69,6 +71,7 @@
     width: 80%;
     margin: 0 auto;
     text-align: start;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 24px;
 } 
 .RoadMapContent li{
@@ -83,4 +86,16 @@
     height: 8px;
     border-radius: 50%;
     background-color: #fff;
+}
+.RoadMapList svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+.RoadMapList li:nth-child(odd) svg{
+    left: 100%;   
+}
+.RoadMapList li:nth-child(even) svg{
+    right: 100%;   
 }
