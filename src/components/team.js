@@ -4,54 +4,54 @@ export default function Team() {
 
     const team = [
         {
-            src: 'hc',
+            src: 'hc_1',
             name: 'HC Lee (lead)',
             Role: 'Product Manager'
         },
         {
-            src: 'yohan',
+            src: 'yohan_1',
             name: 'Yohan Park',
             Role: 'Product design'
         },
         {
-            src: 'joo',
+            src: 'joo_1',
             name: 'Gwanghyun Joo',
             Role: 'Full-stack dev '
         },
         {
-            src: 'jungmin',
+            src: 'jungmin_1',
             name: 'Jungmin So',
             Role: 'App front-end'
         },
         {
-            src: 'yubin',
+            src: 'yubin_1',
             name: 'Yubin Kim',
             Role: 'Operation/Marketing'
         },
         {
-            src: 'jinsung',
+            src: 'jinsung_1',
             name: 'Jinsung Yang',
             Role: 'Web front-end'
         },
         {
-            src: 'dean',
+            src: 'dean_1',
             name: 'Dean Kang',
             Role: 'Blockchain developer'
         },
         {
-            src: 'seungho',
+            src: 'seungho_1',
             name: 'Seungho Baek',
             Role: 'Designer'
         },
         {
-            src: 'Taemin',
+            src: 'Taemin_1',
             name: 'Taemin Kim',
             Role: 'Operation'
         }
     ]
 
     return (
-        <section className="Team">
+        <section id="Team">
             <div className="TeamInner">
                 <h3>TEAM</h3>
                 <ul className="member">

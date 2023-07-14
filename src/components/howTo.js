@@ -73,7 +73,7 @@ export default function Howto() {
   }, [currentScroll]);
 
   return (
-    <section className="howto" ref={howtoRef}>
+    <section id="howto" ref={howtoRef}>
       <div className="howtoInner">
         <h3 className="hidden">How to</h3>
         <div className="howtoLayout" ref={howtoLayoutRef}>

@@ -2,6 +2,12 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+.TeamInner h3{
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+}
 .member{
     width: 100%;
     display: grid;
@@ -15,6 +21,10 @@
 }
 .member dt{
     margin: 25px 0 15px 0;
+    font-size: 24px;
+}
+.member dd {
+    font-size: 18px;
 }
 
   

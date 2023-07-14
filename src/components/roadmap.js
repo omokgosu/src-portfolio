@@ -42,7 +42,7 @@ export default function RoadMap() {
     })
     
     return (
-        <section className="RoadMap">
+        <section id="RoadMap">
             <div className="RoadMapInner">
                 <h3 className="hidden">ROAD MAP</h3>
                 <ul className="RoadMapList">

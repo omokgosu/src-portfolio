@@ -3,7 +3,7 @@ import '../styles/sustain.css'
 export default function Sustain() {
 
     return (
-        <section className="Sustain">
+        <section id="Sustain">
             <div className="SustainInner">
                 <h3>SUSTAINABLE GAME ECONOMY</h3>
                 <div className="SustainInfo">

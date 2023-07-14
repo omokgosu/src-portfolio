@@ -8,11 +8,10 @@ export default function Header() {
             <nav>
                 <h2 className="hidden">네비게이션 영역</h2>
                 <ul>
-                    <li>MAIN</li>
-                    <li>HOW TO</li>
-                    <li>LOAD MAP</li>
-                    <li>SUSTAIN</li>
-                    <li>TEAM</li>
+                    <li><a href="#howto">HOW TO</a></li>
+                    <li><a href="#RoadMap">LOAD MAP</a></li>
+                    <li><a href="#Sustain">SUSTAIN</a></li>
+                    <li><a href="#Team">TEAM</a></li>
                 </ul>
             </nav>
             <ul className="sns">
