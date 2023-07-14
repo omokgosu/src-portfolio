@@ -46,3 +46,57 @@
     opacity: 1;
     transition-delay: .8s;
 }
+
+@media screen and (max-width: 1400px) {
+    .main{
+        margin-top: 80px;
+        padding: 60px 0;
+    }
+    .mainInner{
+        width: 90%;
+    }
+    .mainTitle h3{
+        font-size: 48px;
+    }
+    .mainInfo p{
+        font-size: 22px;
+    }
+    .mainAppBtn li{
+        width: 180px;
+    }
+    .mainAppBtn li a{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mainInfo p{
+        font-size: 18px;
+    }
+    .mainAppBtn li{
+        width: 160px;
+    }
+    .mainAppBtn li a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 756px) {
+    .mainAni{
+        height: 60vh;
+    }
+    .mainAppBtn{
+        width: 100%;
+    }
+    .mainAppBtn li{
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        border-radius: 50%;
+    }
+    .mainAppBtn li a span{
+        display: none;
+    }
+    .mainInfo p{
+        display: none;
+    }
+}

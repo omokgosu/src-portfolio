@@ -115,6 +115,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
     font-weight: 700;
+    text-align: center;
 }
 .mainAppBtn{
     display: flex;
@@ -133,8 +134,11 @@
     background-color: #fff;
 }
 .mainAppBtn li a{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 8px;
     padding: 10px 0;
     font-size: 24px;
@@ -170,4 +174,58 @@
     top: 100%;
     width: 40%;
     animation: car1 6s 2s linear infinite;
+}
+
+@media screen and (max-width: 1400px) {
+    .main{
+        margin-top: 80px;
+        padding: 60px 0;
+    }
+    .mainInner{
+        width: 90%;
+    }
+    .mainTitle h3{
+        font-size: 48px;
+    }
+    .mainInfo p{
+        font-size: 22px;
+    }
+    .mainAppBtn li{
+        width: 180px;
+    }
+    .mainAppBtn li a{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mainInfo p{
+        font-size: 18px;
+    }
+    .mainAppBtn li{
+        width: 160px;
+    }
+    .mainAppBtn li a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 756px) {
+    .mainAni{
+        height: 60vh;
+    }
+    .mainAppBtn{
+        width: 100%;
+    }
+    .mainAppBtn li{
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        border-radius: 50%;
+    }
+    .mainAppBtn li a span{
+        display: none;
+    }
+    .mainInfo p{
+        display: none;
+    }
 }
