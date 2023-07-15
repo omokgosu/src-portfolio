@@ -36,6 +36,19 @@
         top: -100%;
     }
 }
+@keyframes carStop {
+    0%{
+        top: 100%;
+    }
+    40%{
+        right: 40%;
+    }
+    100%{
+        right: 40%;
+        top: -100%;
+    }
+
+}
 .main{
     margin-top: 100px;
     padding: 100px 0;
@@ -159,6 +172,7 @@
     z-index: -1;
 }
 .carAnimaition li{
+    position: relative;
     width: 50%;
     height: 100%;
     text-align: center;
@@ -170,12 +184,44 @@
     animation: car2 6s 5s linear infinite;
 }
 .carAnimaition li:last-child img{
-    position: relative;
+    position: absolute;
     top: 100%;
-    width: 40%;
-    animation: car1 6s 2s linear infinite;
+    right: 10%;
+    width: 20%;
 }
-
+.carAnimaition li:last-child img.car1{
+    animation: car1 8s 3s linear infinite;
+}
+.carAnimaition li:last-child img.car2{
+    animation: car1 8s 5s linear infinite;
+}
+.carAnimaition li:last-child img.car3{
+    animation: car1 8s 8s linear infinite;
+}
+.carAnimaition li:last-child img.car4{
+    animation: car1 4s 2s linear infinite;
+    right: 40%;
+}
+.carAnimaition li:last-child img.car5{
+    animation: car1 4s 4s linear infinite;
+    right: 40%;
+}
+.carAnimaition li:last-child img.car6{
+    animation: car1 4s 6s linear infinite;
+    right: 40%;
+}
+.carAnimaition li:last-child img.car7{
+    animation: car1 2s 2s linear infinite;
+    right: 70%;
+}
+.carAnimaition li:last-child img.car8{
+    animation: car1 2s 4s linear infinite;
+    right: 70%;
+}
+.carAnimaition li:last-child img.car9{
+    animation: car1 2s 6s linear infinite;
+    right: 70%;
+}
 @media screen and (max-width: 1400px) {
     .main{
         margin-top: 80px;

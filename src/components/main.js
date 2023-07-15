@@ -73,10 +73,18 @@ export default function Main() {
             </div>
             <ul className="carAnimaition">
               <li>
-                <img src="/assets/icons/main/Main_animaition_2.svg" alt="car svg"/>
+                {/* <img src="/assets/icons/main/Main_animaition_2.svg" alt="car svg"/> */}
               </li>
               <li>
-                <img src="/assets/icons/main/Main_animaition_1.svg" alt="car svg"/>
+                <img className="car1" src="/assets/icons/main/Main_animaition_1.svg" alt="car svg"/>
+                <img className="car2" src="/assets/icons/main/Main_animaition_1.svg" alt="car svg"/>
+                <img className="car3" src="/assets/icons/main/Main_animaition_1.svg" alt="car svg"/>
+                <img className="car4" src="/assets/icons/main/Main_animaition_1.svg" alt="car svg"/>
+                <img className="car5" src="/assets/icons/main/Main_animaition_1.svg" alt="car svg"/>
+                <img className="car6" src="/assets/icons/main/Main_animaition_1.svg" alt="car svg"/>
+                <img className="car7" src="/assets/icons/main/Main_animaition_1.svg" alt="car svg"/>
+                <img className="car8" src="/assets/icons/main/Main_animaition_1.svg" alt="car svg"/>
+                <img className="car9" src="/assets/icons/main/Main_animaition_1.svg" alt="car svg"/>
               </li>
             </ul>
         </div>
