@@ -18,7 +18,7 @@
 .howtoLayout .textFix.finish{
     position: absolute;
     bottom: 50vh;
-    transform: translateY(50%);
+    transform: translateY(100%);
     top: auto;
 }
 .howtoLayout h4{
@@ -34,29 +34,30 @@
 }
 .howtoLayout ul li{
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 100px);
 }
 .howtoLayout ul img{
     position: absolute;
     left: 45%;
     top: 50%;  
-    transform: translateY(-50%);
+    transform: translateY(-25%);
     width: 45%;
 }
 .howtoLayout ul li:last-child img{
     left: 65%;
     width: 15%;
+    transform: translateY(-30%);
 }
 .howtoBack{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);
     top: 100px;
     left: 50%;
     bottom: auto;
     transform: translate(-50%, 0);
     z-index: 2;
-    background: url(../../public/assets/images/howto/howto_back.svg) no-repeat top center;
+    background: url(../../public/assets/images/howto/howto_back.svg) no-repeat top center / 100% 100%;
 }
 .howtoBack.active{
     position: fixed;
@@ -65,4 +66,90 @@
     position: absolute;
     bottom: -100px;
     top: auto;
+}
+
+@media screen and (max-width: 1400px) {
+    #howto{
+        margin: 70px 0;
+    }
+    .howtoLayout{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .howtoLayout .textFix{
+        transform: translateY(-25%);
+    }
+    .howtoLayout .textFix.active{
+        width: 35%;
+    }
+    .howtoLayout .textFix.finish{
+        bottom: 50vh;
+        transform: translateY(120%);
+    }
+    .howtoLayout ul li{
+        height: calc(100vh - 80px);
+    }
+    .howtoLayout ul img{
+        transform: translateY(-20%);
+    }
+    .howtoLayout ul li:last-child img{
+        transform: translateY(-15%);
+    }
+    .howtoLayout h4{
+        font-size: 36px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    .howtoLayout p{
+        font-size: 18px;
+    }
+    .howtoBack{
+        top: 80px;
+        height: calc(100vh - 80px);
+        background: url(../../public/assets/images/howto/howto_back.svg) no-repeat center / 100% 100%;
+    }
+    .howtoBack.active{
+        width: 90%;
+        left: 5%;
+        transform: none;
+    }
+    .howtoBack.finish{
+        bottom: -80px;
+    }
+}
+@media screen and (max-width: 756px) {
+    .howtoLayout .textFix{
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: 0;
+        transform: none;
+    }
+    .howtoLayout .textFix.active{
+        width: 100%;
+    }
+    .howtoLayout .textFix.finish{
+        bottom: auto;
+        transform: none;
+    }
+    .howtoLayout h4{
+        font-size: 24px;
+    }
+    .howtoLayout p{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+    .howtoLayout ul img{
+        position: absolute;
+        left: 50%;
+        top: 50%;  
+        transform: translate(-50% , -10%);
+        width: 80%;
+    }
+    .howtoLayout ul li:last-child img{
+        left: 50%;
+        width: 30%;
+        transform: translate(-50% , -20%);
+    }
 }

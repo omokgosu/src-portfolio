@@ -4,6 +4,7 @@
 .typoInner{
     max-width: 1400px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .typoInner h3{
     font-size: 96px;
@@ -48,55 +49,33 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .main{
-        margin-top: 80px;
-        padding: 60px 0;
-    }
-    .mainInner{
+    .typoInner{
         width: 90%;
     }
-    .mainTitle h3{
+    .typoInner h3{
+        font-size: 72px;
+    }
+    .typoInner p{
         font-size: 48px;
-    }
-    .mainInfo p{
-        font-size: 22px;
-    }
-    .mainAppBtn li{
-        width: 180px;
-    }
-    .mainAppBtn li a{
-        font-size: 18px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .mainInfo p{
-        font-size: 18px;
+    .typo{
+        padding: 40px 0;
     }
-    .mainAppBtn li{
-        width: 160px;
+    .typoInner h3{
+        font-size: 60px;
     }
-    .mainAppBtn li a{
-        font-size: 14px;
+    .typoInner p{
+        font-size: 36px;
     }
 }
 @media screen and (max-width: 756px) {
-    .mainAni{
-        height: 60vh;
+    .typoInner h3{
+        font-size: 48px;
     }
-    .mainAppBtn{
-        width: 100%;
-    }
-    .mainAppBtn li{
-        width: 80px;
-        height: 80px;
-        padding: 0;
-        border-radius: 50%;
-    }
-    .mainAppBtn li a span{
-        display: none;
-    }
-    .mainInfo p{
-        display: none;
+    .typoInner p{
+        font-size: 24px;
     }
 }

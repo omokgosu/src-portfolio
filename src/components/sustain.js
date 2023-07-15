@@ -14,9 +14,11 @@ export default function Sustain() {
                 </div>
                 <ul>
                     <li>
+                        <div className="solid"></div>
                         <span>SUPPLY</span>
                     </li>
                     <li>
+                        <div className="dashed"></div>
                         <span>BURNING</span>
                     </li>
                 </ul>

@@ -26,5 +26,29 @@
 .member dd {
     font-size: 18px;
 }
+@media screen and (max-width: 1400px) {
+    .TeamInner{
+        width: 90%;
+    }
+    .member{
+        row-gap: 60px;
+        column-gap: 20px;
+    }
+}
 
+@media screen and (max-width: 1024px) {
+    .member{
+        grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+        row-gap: 40px;
+        column-gap: 10px;
+    }
+}
+@media screen and (max-width: 756px) {
+    .member dt{
+        font-size: 18px;
+    }
+    .member dd {
+        font-size: 14px;
+    }
+}
   
