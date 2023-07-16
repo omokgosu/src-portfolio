@@ -1,3 +1,6 @@
+#RoadMap{
+    padding-top: 150px;
+}
 .RoadMapInner{
     max-width: 1400px;
     margin: 0 auto;
@@ -143,9 +146,14 @@
 }
 
 @media screen and (max-width: 1024px) {
-    
+    #RoadMap{
+        padding-top: 100px;
+    }
 }
 @media screen and (max-width: 756px) {
+    #RoadMap{
+        padding-top: 50px;
+    }
     .RoadMapList > li{
         width: 100%;
         margin-bottom: 80%;
