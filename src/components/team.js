@@ -4,49 +4,54 @@ export default function Team() {
 
     const team = [
         {
-            src: 'hc_1',
+            src: 'hc',
             name: 'HC Lee (lead)',
             Role: 'Product Manager'
         },
         {
-            src: 'yohan_1',
+            src: 'yohan',
             name: 'Yohan Park',
             Role: 'Product design'
         },
         {
-            src: 'joo_1',
+            src: 'joo',
             name: 'Gwanghyun Joo',
             Role: 'Full-stack dev '
         },
         {
-            src: 'jungmin_1',
+            src: 'jungmin',
             name: 'Jungmin So',
             Role: 'App front-end'
         },
         {
-            src: 'yubin_1',
+            src: 'yubin',
             name: 'Yubin Kim',
             Role: 'Operation/Marketing'
         },
         {
-            src: 'jinsung_1',
+            src: 'jinsung',
             name: 'Jinsung Yang',
             Role: 'Web front-end'
         },
         {
-            src: 'dean_1',
+            src: 'dean',
             name: 'Dean Kang',
             Role: 'Blockchain developer'
         },
         {
-            src: 'seungho_1',
+            src: 'seungho',
             name: 'Seungho Baek',
             Role: 'Designer'
         },
         {
-            src: 'Taemin_1',
+            src: 'Taemin',
             name: 'Taemin Kim',
             Role: 'Operation'
+        },
+        {
+            src: 'logan',
+            name: 'Logan Kim',
+            Role: 'Advisor'
         }
     ]
 
