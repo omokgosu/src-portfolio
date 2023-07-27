@@ -1,0 +1,65 @@
+.waiting{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.waitingText{
+    flex: 1;
+    color: #fff;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.waitingText h2{
+    font-weight: 400;
+    padding-left: 80px;
+}
+.waitingText p{
+    padding-left: 80px;
+}
+.waitingText p:nth-child(2){
+    margin: 100px 0 50px 0;
+}
+.waitingText p:last-child{
+    font-size:  32px;
+}
+.waitingNav{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #fff;
+}
+.navLink > img{
+    width: 100%;
+}
+.navLink{
+    position: relative;
+}
+.waitingAppBtn{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+.waitingAppBtn li:first-child{
+    margin-bottom: 10px;
+}
+.waitingAppBtn a{
+    display: block;
+    width: 230px;
+    height: 68px;
+}
+.waitingAppBtn li:first-child a{
+    background: url(/public/assets/images/waiting/google.png) no-repeat center;
+}
+.waitingAppBtn li:last-child a{
+    background: url(/public/assets/images/waiting/appstore.png) no-repeat center;
+}
+.waitingNav a{
+    flex: 1;
+    color: #000;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
