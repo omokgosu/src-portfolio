@@ -36,7 +36,7 @@ export default function Waiting() {
                 <a href="https://saferoadclub.gitbook.io/safe-road-club-open-beta/"
                     target="_blank"
                     rel="noopener noreferrer"
-                >https://saferoadclub.gitbook.io/safe-road-club-open-beta/</a>
+                >Click and Move whitepaper </a>
             </div>
         </section>
       </div>
