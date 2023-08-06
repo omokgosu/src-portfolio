@@ -3,9 +3,8 @@
     top: 0;
     right: 0;
     left: 0;
-    padding: 20px 0;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #000;
     z-index: 1000;
 }
@@ -18,27 +17,56 @@
     align-items: center;
 }
 .headerInner h1{
-    width: 60px;
-    height: 63px;
-    background: url(../../public/Logo.png) no-repeat center/cover;
-}
-.headerInner nav ul{
-    display: flex;
-    gap: 120px;
-    font-size: 24px;
-    color: #fff;
+    width: 51px;
+    height: 54px;
+    background: url(../../public/Logo.svg) no-repeat center/cover;
 }
 .mobile_btn{
-    display: none;
     width: 27px;
     height: 20px;
     background: url(../../public/assets/icons/header/mobile_btn.png) no-repeat center/cover;
 }
-.mobile_close_btn{
-    display: none;
-    width: 22px;
-    height: 22px;
-    background: url(../../public/assets/icons/header/mobile_close_btn.svg) no-repeat center/cover;
+.menu{
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    top: 80px;
+    left: 0;
+    background-color: #000;
+}
+.menuInner{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    font-size: 48px;
+    font-family: 'Panchang-Bold';
+}
+nav a span{
+    position: relative;
+}
+nav a span::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background: #d9d9d9;
+    transition: all .5s;
+}
+nav a span:hover::after{
+    width: 100%;
+}
+nav ul li{
+    margin-bottom: 50px;
+}
+nav ul li:last-child{
+    margin-bottom: 0;
 }
 .sns{
     display: flex;
@@ -91,11 +119,5 @@
         text-align: center;
         padding: 8px 0;
         border-bottom: solid 1px #fff;
-    }
-    .mobile_close_btn{
-        display: block;
-        position: absolute;
-        top: 22px;
-        right: 22px;
     }
 }

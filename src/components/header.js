@@ -31,28 +31,33 @@ export default function Header() {
       <header className="header">
         <div className="headerInner">
             <h1><span className="hidden">SRC 로고</span></h1>
-            <nav className={isNavOpen ? 'on' : ''}>
-                <h2 className="hidden">네비게이션 영역</h2>
-                <button type="button" className="mobile_close_btn" onClick={closeNav}></button>
-                <ul>
-                    <li><a href="#howto">HOW TO</a></li>
-                    <li><a href="#RoadMap">LOAD MAP</a></li>
-                    <li><a href="#Sustain">SUSTAIN</a></li>
-                    <li><a href="#Team">TEAM</a></li>
-                </ul>
-            </nav>
-            <ul className="sns">
-                <li>
-                    <span className='hidden'>인스타그램</span>
-                </li>
-                <li>
-                    <span className='hidden'>페이스북</span>
-                </li>
-                <li>
-                    <span className='hidden'>유튜브</span>
-                </li>
-            </ul>
+            <button type="button" className="app_btn"><span>DOWNLOAD THE APP FOR A PASSIVE INCOME</span></button>
             <button type="button" className="mobile_btn" onClick={toggleNav}></button>
+            <div className="menu">
+              <div className="menuInner">
+                <nav className={isNavOpen ? 'on' : ''}>
+                    <h2 className="hidden">네비게이션 영역</h2>
+                    <ul>
+                        <li><a href="#howto"><span>HOME</span></a></li>
+                        <li><a href="#RoadMap"><span>HOW TO GET</span></a></li>
+                        <li><a href="#Sustain"><span>GAME ECONOMY</span></a></li>
+                        <li><a href="#Team"><span>ROADMAP</span></a></li>
+                        <li><a href="#Team"><span>TEAM</span></a></li>
+                    </ul>
+                </nav>
+                <ul className="sns">
+                    <li>
+                        <span className='hidden'>디스코드</span>
+                    </li>
+                    <li>
+                        <span className='hidden'>백서</span>
+                    </li>
+                    <li>
+                        <span className='hidden'>트위터</span>
+                    </li>
+                </ul>
+              </div>
+            </div>
         </div>
       </header>
     );
