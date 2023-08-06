@@ -1,9 +1,90 @@
-/* font-family: 'Anton', sans-serif;
-font-family: 'Bebas Neue', sans-serif;
-font-family: 'Roboto', sans-serif; */
-:root{
-    
-}
+@font-face {
+    font-family: 'Panchang-Variable';
+    src: url('../../public/assets/fonts/Panchang-Variable.woff2') format('woff2'),
+         url('../../public/assets/fonts/Panchang-Variable.woff') format('woff'),
+         url('../../public/assets/fonts/Panchang-Variable.ttf') format('truetype');
+         font-weight: 200 800;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Extralight';
+    src: url('../../public/assets/fonts/Panchang-Extralight.woff2') format('woff2'),
+         url('../../public/assets/fonts/Panchang-Extralight.woff') format('woff'),
+         url('../../public/assets/fonts/Panchang-Extralight.ttf') format('truetype');
+         font-weight: 200;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Light';
+    src: url('../../public/assets/fonts/Panchang-Light.woff2') format('woff2'),
+         url('../../public/assets/fonts/Panchang-Light.woff') format('woff'),
+         url('../../public/assets/fonts/Panchang-Light.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Regular';
+    src: url('../../public/assets/fonts/Panchang-Regular.woff2') format('woff2'),
+         url('../../public/assets/fonts/Panchang-Regular.woff') format('woff'),
+         url('../../public/assets/fonts/Panchang-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Medium';
+    src: url('../../public/assets/fonts/Panchang-Medium.woff2') format('woff2'),
+         url('../../public/assets/fonts/Panchang-Medium.woff') format('woff'),
+         url('../../public/assets/fonts/Panchang-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Semibold';
+    src: url('../../public/assets/fonts/Panchang-Semibold.woff2') format('woff2'),
+         url('../../public/assets/fonts/Panchang-Semibold.woff') format('woff'),
+         url('../../public/assets/fonts/Panchang-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Bold';
+    src: url('../../public/assets/fonts/Panchang-Bold.woff2') format('woff2'),
+         url('../../public/assets/fonts/Panchang-Bold.woff') format('woff'),
+         url('../../public/assets/fonts/Panchang-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Extrabold';
+    src: url('../../public/assets/fonts/Panchang-Extrabold.woff2') format('woff2'),
+         url('../../public/assets/fonts/Panchang-Extrabold.woff') format('woff'),
+         url('../../public/assets/fonts/Panchang-Extrabold.ttf') format('truetype');
+         font-weight: 800;
+         font-display: swap;
+         font-style: normal;
+  }
+/* font-family: 'Inter', sans-serif; */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,7 +108,7 @@ html{
 }
 body{
     background: #000;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Panchang-Regular';
     color: #fff;
 }
 ol, ul {

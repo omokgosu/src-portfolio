@@ -1,10 +1,8 @@
-//import LandingPage from "./pages/LandingPage";
-import Waiting from "./pages/Waiting";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
-      // <LandingPage />
-      <Waiting />
+      <LandingPage />
   );
 }
 
