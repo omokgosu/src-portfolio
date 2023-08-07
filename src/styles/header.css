@@ -1,3 +1,11 @@
+@keyframes appBtn {
+    from{
+        transform: translate(0 , -50%);
+    }
+    to{
+        transform: translate(-50% , -50%);
+    }
+}
 .header{
     position: fixed;
     top: 0;
@@ -5,11 +13,14 @@
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: #000;
     z-index: 1000;
+}
+.header.on{
+    background-color: #000;
 }
 .headerInner{
     max-width: 1400px;
+    height: 100%;
     margin: 0 auto;
 
     display: flex;
@@ -21,18 +32,53 @@
     height: 54px;
     background: url(../../public/Logo.svg) no-repeat center/cover;
 }
-.mobile_btn{
-    width: 27px;
-    height: 20px;
-    background: url(../../public/assets/icons/header/mobile_btn.png) no-repeat center/cover;
+.headerBtn{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.appBtn{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    width: 256px;
+    height: 48px;
+    border-radius: 60px;
+    background: linear-gradient(240deg, #4A51FE 0%, #EF67E6 100%);
+    overflow: hidden;
+}
+.appBtn span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0 , -50%);
+    white-space: nowrap;
+    animation: appBtn 5s linear infinite;
+}
+.appBtn span:hover{
+    animation-play-state: paused;
+}
+.mobileBtn{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: url(../../public/assets/icons/header/mobile_btn.svg) no-repeat center , linear-gradient(180deg, #3D4FFF 0%, #FF69E3 100%);
+}
+.mobileBtn.on{
+    background: url(../../public/assets/icons/header/mobile__close_btn.svg) no-repeat center , linear-gradient(180deg, #3D4FFF 0%, #FF69E3 100%);
 }
 .menu{
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 80px);
     top: 80px;
-    left: 0;
+    left: -100%;
     background-color: #000;
+    transition: left .5s;
+}
+.menu.on{
+    left: 0;
 }
 .menuInner{
     max-width: 1200px;
@@ -68,56 +114,88 @@ nav ul li{
 nav ul li:last-child{
     margin-bottom: 0;
 }
+.navLink{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .sns{
     display: flex;
     gap: 10px;
 }
 .sns li{
-    width: 26px;
-    height: 26px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
 }
 .sns li:nth-child(1){
-    background: url(../../public/assets/icons/sns/instagram.svg);
+    background: url(../../public/assets/icons/header/discord.svg);
 }
 .sns li:nth-child(2){
-    background: url(../../public/assets/icons/sns/facebook.svg);
+    background: url(../../public/assets/icons/header/twitter.svg);
 }
 .sns li:nth-child(3){
-    background: url(../../public/assets/icons/sns/youtube.svg);
+    background: url(../../public/assets/icons/header/whitepaper.svg);
+}
+.introduce{
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 80px 0 30px 0;
+}
+.introduce a{
+    position: relative;
+}
+.introduce a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.navLink > p{
+    font-size: 12px;
+    color: #727272;
+    line-height: 130%;
+    text-align: end;
 }
 @media screen and (max-width: 1400px) {
-    .header{
-        height: 80px;
-    }
     .headerInner{
         width: 90%;
+        justify-content: flex-end;
     }
-    .headerInner h1{
-        width: 40px;
-        height: 42px;
+    nav a{
+        font-size: 36px;
+        font-family: 'Panchang-Bold';
     }
-    .mobile_btn{
-        display: block;
+    .menuInner{
+        width: 90%;
     }
-    .headerInner nav{
-        position: fixed;
-        left: 0;
-        top: -100%;
-        right: 0;
-    }
-    .headerInner nav.on{
-        top: 0;
-    }
-    .headerInner nav ul{
+}
+@media screen and (max-width: 768px) {
+    .menuInner{
+        width: 100%;
         flex-direction: column;
-        gap: 0;
-        background-color: #000;
-        padding-top: 40px;
+        justify-content: center;
+        gap: 60px;
     }
-    .headerInner nav ul li{
+    nav a{
+        font-size: 24px;
+    }
+    .navLink{
+        width: 100%;
+        align-items: center;
+    }
+    nav a span:hover::after{
+        width: 0;
+    }
+    .navLink p{
         text-align: center;
-        padding: 8px 0;
-        border-bottom: solid 1px #fff;
+    }
+    .introduce{
+        margin: 60px 0 30px 0;
     }
 }
