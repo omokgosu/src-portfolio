@@ -1,155 +1,90 @@
 #howto{
     margin: 150px 0;
 }
-.howtoLayout{
+.howtoInner{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.howtoView{
     position: relative;
-    text-align: center;
+    width: 69%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.howtoLayout .textFix{
-    position: absolute;
-    width: 30%;
-    top: 50vh;
-    left: 10%;
-    transform: translateY(-50%);
-}
-.howtoLayout .textFix.active{
-    position: fixed;
-}
-.howtoLayout .textFix.finish{
-    position: absolute;
-    bottom: 50vh;
-    transform: translateY(100%);
-    top: auto;
-}
-.howtoLayout h4{
-    display: inline-block;
-    font-size: 56px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: solid 1px #fff;
-    font-weight: 400;
-}
-.howtoLayout p{
-    font-size: 24px;
-}
-.howtoLayout ul li{
-    position: relative;
-    height: calc(100vh - 100px);
-}
-.howtoLayout ul img{
-    position: absolute;
-    left: 45%;
-    top: 50%;  
-    transform: translateY(-25%);
-    width: 45%;
-}
-.howtoLayout ul li:last-child img{
-    left: 65%;
-    width: 15%;
-    transform: translateY(-30%);
-}
-.howtoBack{
+.howtoView .earn2,
+.howtoView .earn3{
     position: absolute;
     width: 100%;
-    height: calc(100vh - 100px);
-    top: 100px;
+    top: 50%;
     left: 50%;
-    bottom: auto;
-    transform: translate(-50%, 0);
-    z-index: 2;
-    background: url(../../public/assets/images/howto/howto_back.svg) no-repeat top center / 100% 100%;
+    transform: translate(-50%,-50%);
 }
-.howtoBack.active{
-    position: fixed;
+.howtoView .earn1{
+    width: 80%;
 }
-.howtoBack.finish{
-    position: absolute;
-    bottom: -100px;
-    top: auto;
+.howtoView .earn2{
+    z-index: -2;
+}
+.howtoView .earn3{
+    z-index: -1;
+}
+.howtoInfo{
+    width: 29%;
+}
+.howtoInfo h4{
+    font-family: 'panchang-bold';
+    font-size: 36px;
+}
+.howtoBottom{
+    margin-top: 70px;
+}
+.howtoBottom h5{
+    font-family: 'panchang-bold';
+    font-size: 24px;
+    background: linear-gradient(270deg, #FF9776 70%, #4C4CE5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.howtoBottom p{
+    font-family: 'inter';
+    font-size: 16px;
+    font-weight: 500;
+}
+.howtoBtn{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 80px;
+}
+.howtoBtn button{
+    width: 36px;
+    height: 36px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    background: url(../../public/assets/icons/howto/arrow_left.svg) no-repeat center;
+}
+.howtoBtn button:last-child{
+    background: url(../../public/assets/icons/howto/arrow_right.svg) no-repeat center;
+}
+.howtoPage span{
+    font-family: 'inter';
+    font-size: 16px;
+}
+.howtoPage span:nth-child(1){
+    color: #fff;
+}
+.howtoPage span:nth-child(2){
+    color: #727272;
 }
 
 @media screen and (max-width: 1400px) {
-    #howto{
-        margin: 70px 0;
-    }
-    .howtoLayout{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .howtoLayout .textFix{
-        transform: translateY(-25%);
-    }
-    .howtoLayout .textFix.active{
-        width: 35%;
-    }
-    .howtoLayout .textFix.finish{
-        bottom: 50vh;
-        transform: translateY(120%);
-    }
-    .howtoLayout ul li{
-        height: calc(100vh - 80px);
-    }
-    .howtoLayout ul img{
-        transform: translateY(-20%);
-    }
-    .howtoLayout ul li:last-child img{
-        transform: translateY(-15%);
-    }
-    .howtoLayout h4{
-        font-size: 36px;
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-    }
-    .howtoLayout p{
-        font-size: 18px;
-    }
-    .howtoBack{
-        top: 80px;
-        height: calc(100vh - 80px);
-        background: url(../../public/assets/images/howto/howto_back.svg) no-repeat center / 100% 100%;
-    }
-    .howtoBack.active{
-        width: 90%;
-        left: 5%;
-        transform: none;
-    }
-    .howtoBack.finish{
-        bottom: -80px;
-    }
+    
 }
 @media screen and (max-width: 756px) {
-    .howtoLayout .textFix{
-        position: absolute;
-        width: 100%;
-        top: 100px;
-        left: 0;
-        transform: none;
-    }
-    .howtoLayout .textFix.active{
-        width: 100%;
-    }
-    .howtoLayout .textFix.finish{
-        bottom: auto;
-        transform: none;
-    }
-    .howtoLayout h4{
-        font-size: 24px;
-    }
-    .howtoLayout p{
-        width: 90%;
-        margin: 0 auto;
-        font-size: 16px;
-    }
-    .howtoLayout ul img{
-        position: absolute;
-        left: 50%;
-        top: 50%;  
-        transform: translate(-50% , -10%);
-        width: 80%;
-    }
-    .howtoLayout ul li:last-child img{
-        left: 50%;
-        width: 30%;
-        transform: translate(-50% , -20%);
-    }
+    
 }

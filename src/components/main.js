@@ -43,8 +43,9 @@ export default function Main() {
 
     return (
       <main className={load ? "main on" : "main"}>
+        <h3 className="hidden">MAIN</h3>
         <div className="mainInner">
-            <p><span>DRIVE, </span><span>SAFE, </span><span>EARN</span></p>
+            <h4><span>DRIVE, </span><span>SAFE, </span><span>EARN</span></h4>
             <p><span>_SRC</span><span>Turn your daily driving<br/>into passive income.</span></p>
             <ul className="mainAppBtn">
                 <li>

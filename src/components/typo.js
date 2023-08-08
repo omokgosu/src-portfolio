@@ -27,39 +27,40 @@ export default function Typo(){
 
     return (
         <section ref={typoRef} className={load ? "typo on" : "typo"}>
-            <div className="typoInner">
-                <p>GET TOKEN REWARDS</p>
-                <div className="typoApp">
-                  <p>ON THE APP</p>
-                  <ul className="typoAppBtn">
-                    <li>
-                      <a 
-                          href="https://testflight.apple.com/join/a2eEql39"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                      >   
-                          <img src='/assets/icons/main/app_store_black.svg' alt="앱스토어 이미지"/>
-                          <span className="hidden">APP STORE</span>
-                      </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://testflight.apple.com/join/a2eEql39"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img src='/assets/icons/main/play_store.svg' alt="플레이스토어 이미지"/>
-                            <span className="hidden">PLAY STORE</span>
-                        </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="typoRoad">
-                  <span className="side"></span>
-                  <span className="middle"></span>
-                  <span className="side"></span>
-                </div>
+          <h3 className="hidden">TYPO</h3>
+          <div className="typoInner">
+            <h4>GET TOKEN REWARDS</h4>
+            <div className="typoApp">
+              <p>ON THE APP</p>
+              <ul className="typoAppBtn">
+                <li>
+                  <a 
+                      href="https://testflight.apple.com/join/a2eEql39"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                  >   
+                      <img src='/assets/icons/main/app_store_black.svg' alt="앱스토어 이미지"/>
+                      <span className="hidden">APP STORE</span>
+                  </a>
+                </li>
+                <li>
+                    <a 
+                        href="https://testflight.apple.com/join/a2eEql39"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src='/assets/icons/main/play_store.svg' alt="플레이스토어 이미지"/>
+                        <span className="hidden">PLAY STORE</span>
+                    </a>
+                </li>
+              </ul>
             </div>
+            <div className="typoRoad">
+              <span className="side"></span>
+              <span className="middle"></span>
+              <span className="side"></span>
+            </div>
+          </div>
         </section>
     );
   }

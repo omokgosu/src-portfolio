@@ -24,28 +24,30 @@
     margin: 0 auto;
     z-index: 10;
 }
+.mainInner h4,
 .mainInner p{
     font-family: 'panchang-bold';
     font-size: 6.25vw;
 }
+.mainInner h4 span,
 .mainInner p span{
     display: inline-block;
     transform: translate(0,-100%);
     opacity: 0; 
     animation: text_up .6s forwards;
 }
-.mainInner p:nth-child(1) span:nth-child(2){
+.mainInner h4 span:nth-child(2){
     animation-delay: .3s;
 }
-.mainInner p:nth-child(1) span:nth-child(3){
+.mainInner h4 span:nth-child(3){
     animation-delay: .6s;
 }
-.mainInner p:nth-child(2){
+.mainInner p{
     display: flex;
     align-items: center;
     gap: 32px;
 }
-.mainInner p:nth-child(2) span:first-child{
+.mainInner p span:first-child{
     font-family: 'panchang-bold';
     font-size: 6.25vw;
     background: var(--gradient-01, linear-gradient(270deg, #FF69E3 29.17%, #3C4FFF 100%));
@@ -54,7 +56,7 @@
     -webkit-text-fill-color: transparent;
     animation-delay: .9s;
 }
-.mainInner p:nth-child(2) span:last-child{
+.mainInner p span:last-child{
     font-family: 'inter';
     color: #ff69E3;
     font-size: 20px;
@@ -154,21 +156,19 @@
         width: 90%;
     }
 }
-@media screen and (max-width: 1400px) {
-    
-}
 @media screen and (max-width: 768px) {
+    .mainInner h4,
     .mainInner p{
         font-size: 10.6vw;
     }
-    .mainInner p:nth-child(1){
+    .mainInner h4{
         display: flex;
         flex-direction: column;
     }
-    .mainInner p:nth-child(2) span:first-child{
+    .mainInner p span:first-child{
         font-size: 10.6vw;
     }
-    .mainInner p:nth-child(2) span:last-child{
+    .mainInner p span:last-child{
         font-size: 14px;
     }
     .mainAppBtn{
