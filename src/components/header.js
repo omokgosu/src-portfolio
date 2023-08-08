@@ -10,10 +10,6 @@ export default function Header() {
         setIsNavOpen(!isNavOpen);
     };
 
-    const closeNav = () => {
-        setIsNavOpen(false);
-    };
-
     useEffect(() => {
         const handleResize = () => {
           if (window.innerWidth > 1400) {
@@ -23,6 +19,7 @@ export default function Header() {
             setIs1400(true);
           }
         };
+        handleResize();
     
         window.addEventListener('resize', handleResize);
     
@@ -36,8 +33,8 @@ export default function Header() {
         <div className="headerInner">
             <h1 className={is1400 ? 'hidden' : ''}><span className="hidden">SRC 로고</span></h1>
             <div className="headerBtn">
-            <button type="button" className={is1400 ? 'hidden' : 'appBtn'}><span>DOWNLOAD THE APP FOR A PASSIVE INCOME DOWNLOAD THE APP FOR A PASSIVE INCOME</span></button>
-            <button type="button" className={isNavOpen ? 'mobileBtn on' : 'mobileBtn'} onClick={toggleNav}></button>
+              <button type="button" className={is1400 ? 'hidden' : 'appBtn'}><span>DOWNLOAD THE APP FOR A PASSIVE INCOME DOWNLOAD THE APP FOR A PASSIVE INCOME</span></button>
+              <button type="button" className={isNavOpen ? 'mobileBtn on' : 'mobileBtn'} onClick={toggleNav}></button>
             </div>
             <div className={isNavOpen ? 'menu on' : 'menu'}>
               <div className="menuInner">

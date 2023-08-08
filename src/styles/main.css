@@ -1,13 +1,17 @@
 @keyframes text_up {
+    from{
+        transform: translate(0,-100px);
+        opacity: 0;
+    }
     to{
         opacity: 1;
-        top: 0;
+        transform: translate(0,0)
     }
 }
 @keyframes text_right {
     to{
         opacity: 1;
-        left: 0;
+        transform: translate(0,0);
     }
 }
 .main{
@@ -18,10 +22,23 @@
     max-width: 1720px;
     height: calc(100vh - 80px);
     margin: 0 auto;
+    z-index: 10;
 }
 .mainInner p{
     font-family: 'panchang-bold';
     font-size: 6.25vw;
+}
+.mainInner p span{
+    display: inline-block;
+    transform: translate(0,-100%);
+    opacity: 0; 
+    animation: text_up .6s forwards;
+}
+.mainInner p:nth-child(1) span:nth-child(2){
+    animation-delay: .3s;
+}
+.mainInner p:nth-child(1) span:nth-child(3){
+    animation-delay: .6s;
 }
 .mainInner p:nth-child(2){
     display: flex;
@@ -35,17 +52,41 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation-delay: .9s;
 }
-.mainInner p:nth-child(2) span{
+.mainInner p:nth-child(2) span:last-child{
     font-family: 'inter';
     color: #ff69E3;
     font-size: 20px;
     font-weight: 500;
+    opacity: 0;
+    transform: translate(-100%,0);
+    animation: text_right .6s 1.5s forwards;
 }
 .mainAppBtn{
     display: flex;
     gap: 20px;
     margin-top: 80px;
+}
+.mainAppBtn li{
+    position: relative;
+}
+.mainAppBtn li::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    background: url(../../public/assets/icons/main/back.svg) no-repeat center/cover;
+    z-index: -1;
+    transition: all .5s;
+}
+.mainAppBtn li:hover::after{
+    right: -4px;
+    top: 4px;
+    opacity: 1;
 }
 .mainAppBtn a{
     font-family: 'inter';
@@ -59,6 +100,13 @@
 }
 .mainAppBtn a span{
     margin: 0 8px 0 12px;
+}
+.mainAppBtn a .arrow{
+    transition: all .5s;
+    transform: translateX(0);
+}
+.mainAppBtn li:hover a .arrow{
+    transform: translateX(8px);
 }
 .road{
     position: absolute;
@@ -82,7 +130,6 @@
     left: 4%;
     width: 92%;
     height: 100vh;
-    z-index: -1;
 }
 .car img{
     width: 10%;
@@ -100,4 +147,51 @@
 .car img:nth-child(3){
     left: 83%;
     top: 40%;
+}
+
+@media screen and (max-width: 1700px) {
+    .mainInner{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    
+}
+@media screen and (max-width: 768px) {
+    .mainInner p{
+        font-size: 10.6vw;
+    }
+    .mainInner p:nth-child(1){
+        display: flex;
+        flex-direction: column;
+    }
+    .mainInner p:nth-child(2) span:first-child{
+        font-size: 10.6vw;
+    }
+    .mainInner p:nth-child(2) span:last-child{
+        font-size: 14px;
+    }
+    .mainAppBtn{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .mainAppBtn a{
+        width: 195px;
+        height: 56px;
+    }
+    .car img{
+        width: 20%;
+    }
+    .car img:nth-child(1){
+        left: 7%;
+        top: 70%;
+    }
+    .car img:nth-child(2){
+        left: 40%;
+        top: 55%;
+    }
+    .car img:nth-child(3){
+        left: 75%;
+        top: 63%;
+    }
 }
