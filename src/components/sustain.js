@@ -16,6 +16,7 @@ export default function Sustain() {
             }
         }
 
+        handleResize();
         window.addEventListener('resize',handleResize);
 
         return () => {
