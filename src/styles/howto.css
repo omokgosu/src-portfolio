@@ -1,8 +1,13 @@
 #howto{
+    position: relative;
     margin: 150px 0;
+    height: 300vh;
 }
 .howtoInner{
+    position: sticky;
+    top: 0;
     max-width: 1600px;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -11,41 +16,90 @@
 .howtoView{
     position: relative;
     width: 69%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .howtoView .earn2,
-.howtoView .earn3{
+.howtoView .earn3,
+.howtoView .nft2,
+.howtoView .nft3,
+.howtoView .recharge2,
+.howtoView .recharge3{
     position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.howtoView_1,
+.howtoView_2,
+.howtoView_3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+.howtoView_1.active,
+.howtoView_2.active,
+.howtoView_3.active{
+    visibility: visible;
+    opacity: 1;
+    transition: all .4s;
+}
 .howtoView .earn1{
     width: 80%;
 }
-.howtoView .earn2{
-    z-index: -2;
+.howtoView .nft1{
+    width: 70%;
 }
-.howtoView .earn3{
+.howtoView .recharge1{
+    width: 30%;
+}
+.howtoView .earnVideo{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: -1;
 }
 .howtoInfo{
     width: 29%;
 }
-.howtoInfo h4{
+.howtoInfo h4,
+.howtoInner h4{
     font-family: 'panchang-bold';
     font-size: 36px;
 }
 .howtoBottom{
     margin-top: 70px;
 }
+.howtoText{
+    position: relative;
+}
 .howtoBottom h5{
     font-family: 'panchang-bold';
     font-size: 24px;
+    margin-bottom: 8px;
+}
+.howtoBottom .text_earn h5{
     background: linear-gradient(270deg, #FF9776 70%, #4C4CE5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.howtoBottom .text_nft h5{
+    background: linear-gradient(270deg, #9AFF76 29.17%, #00D3C7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.howtoBottom .text_recharge h5{
+    background: linear-gradient(270deg, #FF69E3 29.17%, #3C4FFF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -82,9 +136,67 @@
     color: #727272;
 }
 
-@media screen and (max-width: 1400px) {
-    
+@media screen and (max-width: 1024px) {
+    .howtoInfo h4,
+    .howtoInner h4{
+        font-size: 28px;
+    }
+    .howtoBottom h5{
+        font-size: 16px;
+    }
+    #howto{
+        margin: 100px 0;
+    }
 }
-@media screen and (max-width: 756px) {
-    
+@media screen and (max-width: 768px) {
+    .howtoInner{
+        flex-direction: column;
+        padding: 5vh 0;
+    }
+    .howtoInfo h4,
+    .howtoInner h4{
+        font-size: 24px;
+    }
+    .howtoView_1.active,
+    .howtoView_2.active,
+    .howtoView_3.active{
+        transition: none;
+    }
+    .howtoView .earn1{
+        width: 60%;
+    }
+    .howtoView .nft1{
+        width: 60%;
+    }
+    .howtoView .recharge1{
+        width: 35%;
+    }
+    .howtoView{
+        width: 100%;
+    }
+    .howtoBottom{
+        margin-top: 0;
+        text-align: center;
+    }
+    .howtoInfo{
+        width: 100%;
+    }
+    .howtoBtn{
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .howtoInner{
+        padding: 8vh 0;
+    }
+    .howtoView .earn1{
+        width: 70%;
+    }
+    .howtoView .nft1{
+        width: 70%;
+    }
+    .howtoView .recharge1{
+        width: 45%;
+    }
 }

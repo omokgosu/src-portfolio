@@ -101,10 +101,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 body{
     background: #000;

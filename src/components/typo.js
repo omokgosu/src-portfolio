@@ -10,7 +10,7 @@ export default function Typo(){
         const scroll = document.documentElement.scrollTop;
         const height = window.innerHeight;
         const current = typoRef.current.offsetTop;
-        console.log(scroll , current-height/2);
+        
         if(scroll > current-height){
           setLoad(true);
         }
