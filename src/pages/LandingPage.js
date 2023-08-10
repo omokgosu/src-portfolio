@@ -15,8 +15,8 @@ export default function LandingPage() {
             <Main />
             <Typo />
             <Howto />
-            <RoadMap />
             <Sustain />
+            <RoadMap />
             <Team />
             <Last />
             <Footer />
