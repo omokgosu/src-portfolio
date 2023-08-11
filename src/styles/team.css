@@ -1,5 +1,5 @@
 .TeamInner{
-    max-width: 1400px;
+    max-width: 1720px;
     margin: 0 auto;
 }
 .TeamInner h3{
@@ -12,19 +12,28 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
-    row-gap: 80px;
-    column-gap: 30px;
+    row-gap: 56px;
+    column-gap: 20px;
     font-size: 18px;
+}
+.member li{
+    font-family: 'inter';
 }
 .member img{
     width: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 20%;
 }
 .member dt{
-    margin: 25px 0 15px 0;
-    font-size: 24px;
+    margin: 24px 0 8px 0;
+    font-size: 20px;
+    font-weight: 600;
 }
 .member dd {
-    font-size: 18px;
+    font-size: 16px;
+    color: #adadad;
 }
 @media screen and (max-width: 1400px) {
     .TeamInner{
