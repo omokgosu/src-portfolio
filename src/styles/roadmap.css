@@ -1,15 +1,38 @@
-#roadmap{
+#RoadMap{
+    position: relative;
     margin: 100px 0;
+    width:100%;
+}
+.stickyContainer{
+    position: sticky;
+    overflow: hidden;
+    top: 0;
 }
 .RoadMapInner{
     display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 11vw;
+    height: 100vh;
+    width: 145%;
 }
 .RoadMapInner h3{
     font-family: 'panchang-bold';
     font-size: 64px;
+    padding-left: 100px;
 }
 .RoadMapList{
+    flex: 1;
+    position: relative;
     display: flex;
+    gap: 5%;
+    height: 60%;
+}
+.RoadMapList > li{
+    width: 45%;
+}
+.RoadMapList > li:nth-child(odd){
+    align-self: flex-end;
 }
 .RoadMapList h4{
     font-family: 'panchang-bold';
@@ -18,9 +41,120 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
 }
 .RoadMapList p{
+    position: relative;
     font-family: 'inter';
     font-size: 16px;
     line-height: 150%;
+}
+.RoadMapList p::after{
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -16px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.RoadMapList img.white,
+.RoadMapList .colorLayout{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+}
+.RoadMapList img.white{
+    z-index: -2;
+}
+.RoadMapList .colorLayout{
+    z-index: -1;
+    width: 0;
+    overflow: hidden;
+}
+.RoadMapList img.moWhite,
+.RoadMapList .moColorLayout{
+    display: none;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    left: 10%;
+}
+.RoadMapList img.moWhite{
+    z-index: -2;
+}
+.RoadMapList .moColorLayout{
+    z-index: -1;
+    overflow: hidden;
+}
+.RoadMapList .moColor{
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {      
+    .RoadMapInner{
+        width: 185%;
+    }
+    .RoadMapInner h3{
+        font-size: 52px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .RoadMapInner{
+        width: 240%;
+    }
+    .RoadMapInner h3{
+        font-size: 46px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .stickyContainer{
+        position: static;
+    }
+    .RoadMapInner{
+        flex-direction: column;
+        gap: 96px;
+        height: auto;
+        width: 100%;
+    }
+    .RoadMapInner h3{
+        font-size: 24px;
+        padding-left: 0;
+    }
+    .RoadMapList{
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        height: auto;
+        padding: 0 20px;
+    }
+    .RoadMapList > li{
+        width: 60%;
+    }
+    .RoadMapList > li:nth-child(even){
+        align-self: flex-end;
+    }
+    .RoadMapList h4{
+        font-size: 20px;
+    }
+    .RoadMapList p{
+        font-size: 14px;
+    }
+    .RoadMapList img.white{
+        display: none;
+    }
+    .RoadMapList .colorLayout{
+        display: none;
+    }
+    .RoadMapList img.moWhite,
+    .RoadMapList .moColorLayout{
+        display: block;
+    }
+    .RoadMapList .moColor{
+        display: block;
+    }
 }
