@@ -1,0 +1,53 @@
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.TeamSlide{
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+.TeamSlide ul{
+    display: flex;
+}
+.TeamSlide li{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    animation: slide 5s linear infinite;
+}
+.TeamSlide p{
+    font-family: 'panchang-bold';
+    font-size: 120px;
+}
+.TeamSlide img{
+    margin: 0 38px;
+}
+
+@media screen and (max-width: 1400px) {   
+    .TeamSlide p{
+        font-size: 100px;
+    }
+    .TeamSlide img{
+        margin: 0 32px;
+}
+}
+@media screen and (max-width: 1024px) {
+    .TeamSlide p{
+        font-size: 60px;
+    }
+    .TeamSlide img{
+        margin: 0 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .TeamSlide p{
+        font-size: 40px;
+    }
+    .TeamSlide img{
+        margin: 0 18px;
+    }
+}

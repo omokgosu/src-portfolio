@@ -85,7 +85,7 @@ export default function Team() {
     return (
         <section id="Team">
             <div className="TeamInner">
-                <h3>TEAM</h3>
+                <h3 className="hidden">TEAM</h3>
                 <ul className="member">
                 {team &&
                     team.map((el, i) => {
