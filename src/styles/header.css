@@ -129,15 +129,22 @@ nav ul li:last-child{
     border-radius: 50%;
 }
 .sns li:nth-child(1){
-    background: url(../../public/assets/icons/header/discord.svg);
+    background: url(../../public/assets/icons/header/whitepaper.svg);
 }
 .sns li:nth-child(2){
     background: url(../../public/assets/icons/header/twitter.svg);
 }
 .sns li:nth-child(3){
-    background: url(../../public/assets/icons/header/whitepaper.svg);
+    background: url(../../public/assets/icons/header/opensea.svg);
+}
+.sns li:nth-child(4){
+    background: url(../../public/assets/icons/header/discord.svg);
+}
+.sns li:nth-child(5){
+    background: url(../../public/assets/icons/header/telegram.svg);
 }
 .introduce{
+    font-family: 'inter';
     display: flex;
     gap: 16px;
     font-size: 12px;
@@ -185,6 +192,7 @@ nav ul li:last-child{
         flex-direction: column;
         justify-content: center;
         gap: 60px;
+        text-align: center;
     }
     nav a{
         font-size: 24px;

@@ -51,13 +51,19 @@ export default function Header() {
                 <div className="navLink">
                   <ul className="sns">
                       <li>
-                          <span className='hidden'>디스코드</span>
+                          <span className='hidden'>깃북</span>
                       </li>
                       <li>
                           <span className='hidden'>트위터</span>
                       </li>
                       <li>
-                          <span className='hidden'>깃북</span>
+                          <span className='hidden'>오픈씨</span>
+                      </li>
+                      <li>
+                          <span className='hidden'>디스코드</span>
+                      </li>
+                      <li>
+                          <span className='hidden'>텔레그램</span>
                       </li>
                   </ul>
                   <ul className="introduce">
@@ -78,7 +84,7 @@ export default function Header() {
                       </a>
                     </li>
                   </ul>
-                  <p>COPYRIGHT 2023 SRC CORP. ALL RIGHTS RESERVED<br/>I POWERED BY SRC CORP.</p>
+                  <p>COPYRIGHT 2023 SRC UNIVERSE CORP. ALL RIGHTS RESERVED<br/>I POWERED BY SRC CORP.</p>
                 </div>
               </div>
             </div>

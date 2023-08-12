@@ -46,7 +46,7 @@ export default function Main() {
         <h3 className="hidden">MAIN</h3>
         <div className="mainInner">
             <h4><span>DRIVE, </span><span>SAFE, </span><span>EARN</span></h4>
-            <p><span>_SRC</span><span>Turn your daily driving<br/>into passive income.</span></p>
+            <p><span>SRC</span><span>Turn your daily driving<br/>into passive income.</span></p>
             <ul className="mainAppBtn">
                 <li>
                     <a 
