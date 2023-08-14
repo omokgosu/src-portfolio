@@ -1,7 +1,9 @@
 import React, { useState , useEffect, useRef } from 'react';
 import '../styles/typo.css'
 
-export default function Typo(){ 
+export default function Typo({
+  alertArea
+}){ 
   
     const [load , setLoad] = useState(false);
     const typoRef = useRef(null);
@@ -37,7 +39,10 @@ export default function Typo(){
                   <a 
                       href="https://testflight.apple.com/join/a2eEql39"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer" onClick={(e)=>{
+                        e.preventDefault();
+                        alertArea();
+                      }}
                   >   
                       <img src='/assets/icons/main/app_store_black.svg' alt="앱스토어 이미지"/>
                       <span className="hidden">APP STORE</span>
@@ -47,7 +52,10 @@ export default function Typo(){
                     <a 
                         href="https://testflight.apple.com/join/a2eEql39"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer" onClick={(e)=>{
+                          e.preventDefault();
+                          alertArea();
+                        }}
                     >
                         <img src='/assets/icons/main/play_store.svg' alt="플레이스토어 이미지"/>
                         <span className="hidden">PLAY STORE</span>

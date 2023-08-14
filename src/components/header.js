@@ -1,7 +1,9 @@
 import React, { useState , useEffect } from 'react';
 import '../styles/header.css'
 
-export default function Header() {
+export default function Header({
+  alertArea
+}) {
 
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [is1400 , setIs1400] = useState(false);
@@ -31,9 +33,9 @@ export default function Header() {
     return (
       <header className={isNavOpen ? 'header on' : 'header'}>
         <div className="headerInner">
-            <h1 className={is1400 ? 'hidden' : ''}><span className="hidden">SRC 로고</span></h1>
+            <h1 className={is1400 ? 'hidden' : ''}><a href="#"><span className="hidden">SRC 로고</span></a></h1>
             <div className="headerBtn">
-              <button type="button" className={is1400 ? 'hidden' : 'appBtn'}><span>DOWNLOAD THE APP FOR A PASSIVE INCOME DOWNLOAD THE APP FOR A PASSIVE INCOME</span></button>
+              <button type="button" className={is1400 ? 'hidden' : 'appBtn'} onClick={alertArea}><span>DOWNLOAD THE APP FOR A PASSIVE INCOME DOWNLOAD THE APP FOR A PASSIVE INCOME</span></button>
               <button type="button" className={isNavOpen ? 'mobileBtn on' : 'mobileBtn'} onClick={toggleNav}></button>
             </div>
             <div className={isNavOpen ? 'menu on' : 'menu'}>
@@ -41,35 +43,85 @@ export default function Header() {
                 <nav>
                     <h2 className="hidden">네비게이션 영역</h2>
                     <ul>
-                        <li><a href="#howto"><span>HOME</span></a></li>
-                        <li><a href="#RoadMap"><span>HOW TO GET</span></a></li>
-                        <li><a href="#Sustain"><span>GAME ECONOMY</span></a></li>
-                        <li><a href="#Team"><span>ROADMAP</span></a></li>
-                        <li><a href="#Team"><span>TEAM</span></a></li>
+                        <li><a href="#" onClick={toggleNav}><span>HOME</span></a></li>
+                        <li><a href="#howto" onClick={toggleNav}><span>HOW TO GET</span></a></li>
+                        <li><a href="#Sustain" onClick={toggleNav}><span>GAME ECONOMY</span></a></li>
+                        <li><a href="#RoadMap" onClick={toggleNav}><span>ROADMAP</span></a></li>
+                        <li><a href="#Team" onClick={toggleNav}><span>TEAM</span></a></li>
                     </ul>
                 </nav>
                 <div className="navLink">
                   <ul className="sns">
                       <li>
+                        <a 
+                          href="#"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e)=>{
+                            e.preventDefault();
+                            alertArea();
+                          }}
+                        >
                           <span className='hidden'>깃북</span>
+                        </a>
                       </li>
                       <li>
+                        <a 
+                          href="#"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e)=>{
+                            e.preventDefault();
+                            alertArea();
+                          }}
+                        >
                           <span className='hidden'>트위터</span>
+                        </a>
                       </li>
                       <li>
+                        <a 
+                          href="#"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e)=>{
+                            e.preventDefault();
+                            alertArea();
+                          }}
+                        >
                           <span className='hidden'>오픈씨</span>
+                        </a>
                       </li>
                       <li>
-                          <span className='hidden'>디스코드</span>
+                        <a 
+                          href="#"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e)=>{
+                            e.preventDefault();
+                            alertArea();
+                          }}
+                        >
+                          <span className='hidden'>오픈씨</span>
+                        </a>
                       </li>
                       <li>
+                        <a 
+                          href="#"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e)=>{
+                            e.preventDefault();
+                            alertArea();
+                          }}
+                        >
                           <span className='hidden'>텔레그램</span>
+                        </a>
                       </li>
                   </ul>
                   <ul className="introduce">
                     <li>
                       <a  
-                        href="#"
+                        href="https://saferoadclub.gitbook.io/safe-road-club-open-beta/"
                         target="_blank"
                         rel="noopener noreferrer">
                           Whitepaper
@@ -79,7 +131,11 @@ export default function Header() {
                       <a  
                         href="#"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        onClick={(e)=>{
+                          e.preventDefault();
+                          alertArea();
+                        }}>
                           Privacy policy
                       </a>
                     </li>

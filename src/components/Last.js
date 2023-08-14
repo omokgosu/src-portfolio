@@ -2,7 +2,9 @@ import React, {useState , useRef, useEffect} from 'react';
 import '../styles/last.css'
 import Top from './top';
 
-export default function Last() {
+export default function Last({
+    alertArea
+}) {
 
     const lastRef = useRef(null);
     const [percent , setPercent ] = useState(100);
@@ -14,8 +16,6 @@ export default function Last() {
             const scroll = document.documentElement.scrollTop;
             const height = layout.offsetHeight;
             const triger = layout.offsetTop - height;
-
-            console.log(height,triger);
 
             if(scroll > triger){
                 const num = ((scroll-triger)/height*100).toFixed(2);
@@ -37,6 +37,7 @@ export default function Last() {
     
     return (
         <section ref={lastRef} className="Last" style={{transform: `translateY(-${percent}%)`}}>
+            <h3 className="hidden">LAST SECTION</h3>
             <div className="LastInner">
                 <div className="LastTitle">
                     <p>TURN YOUR DAILY DRIVING<br/>INTO PASSIVE INCOME</p>
@@ -45,7 +46,10 @@ export default function Last() {
                             <a 
                                 href="https://testflight.apple.com/join/a2eEql39"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener noreferrer" onClick={(e)=>{
+                                    e.preventDefault();
+                                    alertArea();
+                                  }}
                             >
                                 <img src='/assets/icons/main/play_store.svg' alt="플레이스토어 이미지"/>
                                 <span>PLAY STORE</span>
@@ -56,7 +60,10 @@ export default function Last() {
                             <a 
                                 href="https://testflight.apple.com/join/a2eEql39"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener noreferrer" onClick={(e)=>{
+                                    e.preventDefault();
+                                    alertArea();
+                                  }}
                             >   
                                 <img src='/assets/icons/main/app_store.svg' alt="앱스토어 이미지"/>
                                 <span>APP STORE</span>

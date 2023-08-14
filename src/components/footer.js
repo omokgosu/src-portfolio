@@ -1,6 +1,8 @@
 import '../styles/footer.css'
 
-export default function Footer() {
+export default function Footer({
+    alertArea
+}) {
 
     return (
         <footer className="footer">
@@ -9,52 +11,19 @@ export default function Footer() {
                     <div className="leftLink">
                         <img src='/Logo.svg' alt="로고" />
                         <ul>
-                            <li>
-                                <a 
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#howto">How to get</a></li>
+                            <li><a href="#Sustain">Game economy</a></li>
+                            <li><a href="#RoadMap">Roadmap</a></li>
+                            <li><a href="#Team">Team</a></li>
+                            <li><a 
                                     href="#"
                                     target="_blank"
-                                    rel="noopener noreferrer">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    How to get
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    Game economy
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    Roadmap
-                                </a>
-                            </li>
-
-                            <li>
-                                <a 
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    Team
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
+                                    rel="noopener noreferrer" 
+                                    onClick={(e)=>{
+                                        e.preventDefault();
+                                        alertArea();
+                                    }}>
                                     Download App
                                 </a>
                             </li>
@@ -66,27 +35,77 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="footerRight">
-                    <ul className="sns">
-                      <li>
-                          <span className='hidden'>깃북</span>
-                      </li>
-                      <li>
-                          <span className='hidden'>트위터</span>
-                      </li>
-                      <li>
-                          <span className='hidden'>오픈씨</span>
-                      </li>
-                      <li>
-                          <span className='hidden'>디스코드</span>
-                      </li>
-                      <li>
-                          <span className='hidden'>텔레그램</span>
-                      </li>
+                    <ul className="footerSns">
+                        <li>
+                            <a 
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                            onClick={(e)=>{
+                                e.preventDefault();
+                                alertArea();
+                              }}
+                            >
+                            <span className='hidden'>깃북</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                            onClick={(e)=>{
+                                e.preventDefault();
+                                alertArea();
+                              }}
+                            >
+                            <span className='hidden'>트위터</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                            onClick={(e)=>{
+                                e.preventDefault();
+                                alertArea();
+                              }}
+                            >
+                            <span className='hidden'>오픈씨</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                            onClick={(e)=>{
+                                e.preventDefault();
+                                alertArea();
+                              }}
+                            >
+                            <span className='hidden'>오픈씨</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                            onClick={(e)=>{
+                                e.preventDefault();
+                                alertArea();
+                              }}
+                            >
+                            <span className='hidden'>텔레그램</span>
+                            </a>
+                        </li>
                     </ul>
                     <ul className="introduce">
                         <li>
                         <a  
-                            href="#"
+                            href="https://saferoadclub.gitbook.io/safe-road-club-open-beta/"
                             target="_blank"
                             rel="noopener noreferrer">
                             Whitepaper
@@ -96,7 +115,11 @@ export default function Footer() {
                         <a  
                             href="#"
                             target="_blank"
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer" 
+                            onClick={(e)=>{
+                                e.preventDefault();
+                                alertArea();
+                              }}>
                             Privacy policy
                         </a>
                         </li>

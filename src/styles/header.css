@@ -27,7 +27,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.headerInner h1{
+.headerInner h1 a{
     width: 51px;
     height: 54px;
     background: url(../../public/Logo.svg) no-repeat center/cover;
@@ -56,7 +56,7 @@
     white-space: nowrap;
     animation: appBtn 5s linear infinite;
 }
-.appBtn span:hover{
+.appBtn:hover span{
     animation-play-state: paused;
 }
 .mobileBtn{
@@ -81,7 +81,7 @@
     left: 0;
 }
 .menuInner{
-    max-width: 1200px;
+    max-width: 1400px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -123,24 +123,24 @@ nav ul li:last-child{
     display: flex;
     gap: 10px;
 }
-.sns li{
+.sns li a{
     width: 32px;
     height: 32px;
     border-radius: 50%;
 }
-.sns li:nth-child(1){
+.sns li:nth-child(1) a{
     background: url(../../public/assets/icons/header/whitepaper.svg);
 }
-.sns li:nth-child(2){
+.sns li:nth-child(2) a{
     background: url(../../public/assets/icons/header/twitter.svg);
 }
-.sns li:nth-child(3){
+.sns li:nth-child(3) a{
     background: url(../../public/assets/icons/header/opensea.svg);
 }
-.sns li:nth-child(4){
+.sns li:nth-child(4) a{
     background: url(../../public/assets/icons/header/discord.svg);
 }
-.sns li:nth-child(5){
+.sns li:nth-child(5) a{
     background: url(../../public/assets/icons/header/telegram.svg);
 }
 .introduce{

@@ -1,0 +1,40 @@
+.alert{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    font-family: 'inter';
+    font-weight: 700;
+    z-index: 2000;
+    text-align: center;
+}
+.alertInner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    padding: 20px;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    background-color: #000;
+}
+.alertInner p{
+    font-size: 36px;
+}
+.alertInner button{
+    width: 80px;
+    padding: 4px 8px;
+    margin-top: 15px;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    font-size: 24px;
+    transition: all .5s;
+}
+.alertInner button:hover{
+    background-color: #fff;
+    color: #000;
+}

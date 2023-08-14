@@ -1,7 +1,9 @@
 import { useState , useEffect } from 'react';
 import '../styles/main.css'
 
-export default function Main() {
+export default function Main({
+  alertArea
+}) {
 
     const [pc , setPc] = useState(true);
     const [load , setLoad] = useState(false);
@@ -53,6 +55,10 @@ export default function Main() {
                         href="https://testflight.apple.com/join/a2eEql39"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={(e)=>{
+                          e.preventDefault();
+                          alertArea();
+                        }}
                     >
                         <img src='/assets/icons/main/play_store.svg' alt="플레이스토어 이미지"/>
                         <span>PLAY STORE</span>
@@ -63,7 +69,10 @@ export default function Main() {
                     <a 
                         href="https://testflight.apple.com/join/a2eEql39"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer" onClick={(e)=>{
+                          e.preventDefault();
+                          alertArea();
+                        }}
                     >   
                         <img src='/assets/icons/main/app_store.svg' alt="앱스토어 이미지"/>
                         <span>APP STORE</span>

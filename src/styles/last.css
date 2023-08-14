@@ -28,23 +28,6 @@
 .LastAppBtn li{
     position: relative;
 }
-.LastAppBtn li::after{
-    content:'';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    right: 0;
-    top: 0;
-    opacity: 0;
-    background: url(../../public/assets/icons/main/back.svg) no-repeat center/cover;
-    z-index: -1;
-    transition: all .5s;
-}
-.LastAppBtn li:hover::after{
-    right: -4px;
-    top: 4px;
-    opacity: 1;
-}
 .LastAppBtn a{
     font-family: 'inter';
     width: 224px;

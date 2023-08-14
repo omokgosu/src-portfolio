@@ -41,28 +41,28 @@
 .footerRight{
     padding-top: 12px;
 }
-.footerRight .sns{
+.footerRight .footerSns{
     display: flex;
     gap: 10px;
 }
-.footerRight .sns li{
+.footerRight .footerSns li a{
     width: 32px;
     height: 32px;
     border-radius: 50%;
 }
-.footerRight .sns li:nth-child(1){
+.footerRight .footerSns li:nth-child(1) a{
     background: url(../../public/assets/icons/header/whitepaper.svg);
 }
-.footerRight .sns li:nth-child(2){
+.footerRight .footerSns li:nth-child(2) a{
     background: url(../../public/assets/icons/header/twitter.svg);
 }
-.footerRight .sns li:nth-child(3){
+.footerRight .footerSns li:nth-child(3) a{
     background: url(../../public/assets/icons/header/opensea.svg);
 }
-.footerRight .sns li:nth-child(4){
+.footerRight .footerSns li:nth-child(4) a{
     background: url(../../public/assets/icons/header/discord.svg);
 }
-.footerRight .sns li:nth-child(5){
+.footerRight .footerSns li:nth-child(5) a{
     background: url(../../public/assets/icons/header/telegram.svg);
 }
 .footerRight .introduce{
