@@ -1,20 +1,42 @@
-import {useState } from 'react';
+import React, {useState , useRef, useEffect} from 'react';
 import '../styles/last.css'
+import Top from './top';
 
 export default function Last() {
+
+    const lastRef = useRef(null);
+    const [percent , setPercent ] = useState(100);
+
+    useEffect(()=>{
+        const layout = lastRef.current;
+        
+        const lastScroll = () => {
+            const scroll = document.documentElement.scrollTop;
+            const height = layout.offsetHeight;
+            const triger = layout.offsetTop - height;
+
+            console.log(height,triger);
+
+            if(scroll > triger){
+                const num = ((scroll-triger)/height*100).toFixed(2);
+                if(num > 100){
+                    return
+                }
+
+                let number = Math.abs(num-100);
+                setPercent(number);
+            }
+        }
+
+        window.addEventListener('scroll',lastScroll);
+
+        return () => {
+            window.removeEventListener('scroll',lastScroll)
+        }
+    },[])
     
-    const [isHovered, setIsHovered] = useState(false);
-
-    const handleMouseEnter = () => {
-      setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-      setIsHovered(false);
-    };
-
     return (
-        <section className="Last">
+        <section ref={lastRef} className="Last" style={{transform: `translateY(-${percent}%)`}}>
             <div className="LastInner">
                 <div className="LastTitle">
                     <p>TURN YOUR DAILY DRIVING<br/>INTO PASSIVE INCOME</p>
@@ -49,6 +71,7 @@ export default function Last() {
                     <img src ="/assets/images/last/SMT.png" alt="SMT"/>
                 </div>
             </div>
+            <Top />
         </section>
     );
   }

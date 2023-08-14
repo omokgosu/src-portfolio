@@ -1,0 +1,36 @@
+@keyframes identifier {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }   
+}
+
+.topBtn{
+    cursor: pointer;
+    position: absolute;
+    bottom: 38px;
+    right: 38px;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background: url(../../public/assets/images/top/top.png) no-repeat center/cover;
+}
+
+@media  screen and (max-width:1200px) {
+    .topBtn{
+        width: 96px;
+        height: 96px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+@media  screen and (max-width: 1024px) {
+    .topBtn{
+        width: 80px;
+        height: 80px;
+        bottom: 20px;
+        right: 20px;
+    }
+}

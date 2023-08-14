@@ -132,6 +132,7 @@
     left: 4%;
     width: 92%;
     height: 100vh;
+    overflow: hidden;
 }
 .car img{
     width: 10%;
@@ -140,7 +141,7 @@
 }
 .car img:nth-child(1){
     left: 32%;
-    top: 60%;
+    top: 40%;
 }
 .car img:nth-child(2){
     left: 58%;

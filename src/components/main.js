@@ -82,9 +82,9 @@ export default function Main() {
           }
         </div>
         <div className="car">
-          <img src='/assets/icons/main/car_black.png' alt="검정색 차" style={{transform: `translateY(-${car.car1}px)`}}/>
-          <img src='/assets/icons/main/car_blue.png' alt="파란색 차" style={{transform: `translateY(-${car.car2}px)`}} />
-          <img src='/assets/icons/main/car_pink.png' alt="핑크색 차" style={{transform: `translateY(-${car.car3}px)`}} />
+          <img src='/assets/icons/main/car_black.png' alt="검정색 차" style={{transform: `translateY(${car.car1}px) rotateZ(180deg)`}}/>
+          <img src='/assets/icons/main/car_blue.png' alt="파란색 차" style={{transform: `translateY(${car.car2}px) rotateZ(180deg)`}} />
+          <img src='/assets/icons/main/car_pink.png' alt="핑크색 차" style={{transform: `translateY(${car.car3}px) rotateZ(180deg)`}} />
         </div>
       </main>
     );

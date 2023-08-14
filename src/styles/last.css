@@ -1,5 +1,6 @@
 .Last{
-    margin: 100px 0;
+    position: relative;
+    margin-bottom: 100px;
     border-radius: 0px 0px 80px 80px;
     background: linear-gradient(154deg, #3C4FFF 0%, #FF68E3 100%);
 }
@@ -113,7 +114,7 @@
 }
 @media screen and (max-width: 1024px) {
     .Last{
-        margin: 60px 0;
+        margin-bottom: 60px;
     }
     .LastTitle p{
         font-size: 22px;
@@ -126,9 +127,9 @@
         margin-top: 40px;
     }
 }
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 768px) {
     .Last{
-        margin: 40px 0;
+        margin-bottom: 40px;
     }
     .LastInner{
         flex-direction: column;
