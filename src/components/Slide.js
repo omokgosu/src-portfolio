@@ -1,4 +1,3 @@
-import React, {useState , useEffect, useRef} from 'react';
 import '../styles/slide.css'
 
 export default function Slide() {
