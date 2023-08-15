@@ -131,13 +131,13 @@ export default function Howto() {
           {
             mobile && <>
               <div className={current === 1 ? "howtoView_1 active" : "howtoView_1"}>
-                <img className="earn1" src="/assets/images/howto/EARN_mobile.png" alt="get token"/>
+                <img className="earn1" src="/assets/images/howto/EARN_MOBILE.png" alt="get token"/>
                 <video ref={mo1} className="earnVideo" autoPlay muted loop content='false'>
                   <source src="/assets/images/howto/mo_media_line01.mp4" type="video/mp4"></source>
                 </video>
               </div>
               <div className={current === 2 ? "howtoView_2 active" : "howtoView_2"}>
-                <img className="nft1" src="/assets/images/howto/NFT_mobile.png" alt="get token"/>
+                <img className="nft1" src="/assets/images/howto/NFT_MOBILE.png" alt="get token"/>
                 <video className="earnVideo" autoPlay muted loop content='false'>
                   <source src="/assets/images/howto/mo_media_line02.mp4" type="video/mp4"></source>
                 </video>

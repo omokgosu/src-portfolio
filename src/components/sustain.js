@@ -30,7 +30,7 @@ export default function Sustain() {
         <section id="Sustain">
             <h3 className='hidden'>SUSTAINABLE GAME ECONOMY</h3>
             <div className="SustainInfo">
-                { pc && <img src="/assets/images/sustain/sustain.png" alt="NFT 관련 설명"/>}
+                { pc && <img src="/assets/images/sustain/Sustain.png" alt="NFT 관련 설명"/>}
                 { mobile && <img src="/assets/images/sustain/mo_sustain.png" alt="NFT 관련 설명"/>}
                 
                 <p className="hidden">도로에서 일정 속도 이하로 운행하면 리워드를 지급합니다. 이 리워드를 통해서
