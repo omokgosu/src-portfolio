@@ -11,7 +11,7 @@ export default function Footer({
                     <div className="leftLink">
                         <img src='/Logo.svg' alt="로고" />
                         <ul>
-                            <li><a href="https://saferoadclub.gitbook.io/safe-road-club-open-beta/">Home</a></li>
+                            <li><a href="https://saferoadclub.app/">Home</a></li>
                             <li><a href="#howto">How to get</a></li>
                             <li><a href="#Sustain">Game economy</a></li>
                             <li><a href="#RoadMap">Roadmap</a></li>
