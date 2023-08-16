@@ -109,19 +109,19 @@ export default function Howto() {
             pc &&
             <>
               <div className={current === 1 ? "howtoView_1 active" : "howtoView_1"}>
-                <img className="earn1" src="../../assets/images/howto/EARN_PC.png" alt="get token"/>
+                <img className="earn1" src="/assets/images/howto/EARN_PC.PNG" alt="get token"/>
                 <video className="earnVideo" autoPlay muted loop content='false'>
                   <source src="/assets/images/howto/media_line01.mp4" type="video/mp4"></source>
                 </video>
               </div>
               <div className={current === 2 ? "howtoView_2 active" : "howtoView_2"}>
-                <img className="nft1" src="../../assets/images/howto/NFT_PC.png" alt="get token"/>
+                <img className="nft1" src="/assets/images/howto/NFT_PC.PNG" alt="get token"/>
                 <video className="earnVideo" autoPlay muted loop content='false'>
                   <source src="/assets/images/howto/media_line02.mp4" type="video/mp4"></source>
                 </video>
               </div>
               <div className={current === 3 ? "howtoView_3 active" : "howtoView_3"}>
-                <img className="recharge1" src="../../assets/images/howto/RECHARGE_PC.png" alt="get token"/>
+                <img className="recharge1" src="/assets/images/howto/RECHARGE_PC.PNG" alt="get token"/>
                 <video className="earnVideo" autoPlay muted loop content='false'>
                   <source src="/assets/images/howto/media_line03.mp4" type="video/mp4"></source>
                 </video>
