@@ -17,7 +17,7 @@
     position: relative;
     display: flex;
     white-space: nowrap;
-    animation: slide 5s linear infinite;
+    animation: slide 10s linear infinite;
 }
 .TeamSlide p{
     font-family: 'panchang-bold';

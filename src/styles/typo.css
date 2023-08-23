@@ -37,7 +37,7 @@
 }
 .typo.on .typoInner > h4,
 .typo.on .typoApp{
-    animation: toTop .7s .8s forwards;
+    animation: toTop 1s 1.5s forwards;
 }
 .typo.on .typoApp{
     animation-delay: 1s;
@@ -83,7 +83,7 @@
     transform: translateX(-100%);
 }
 .typo.on .typoRoad .side{
-    animation: road .8s forwards;
+    animation: road 1.5s forwards;
 }
 .typo.on .typoRoad .side:last-child{
     animation-delay: .4s;
@@ -96,7 +96,7 @@
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='white' stroke-width='4' stroke-dasharray='6%2c14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 .typo.on .typoRoad .middle{
-    animation: road .5s .2s forwards;
+    animation: road 1.5s .2s forwards;
 }
 
 @media screen and (max-width: 1400px) {
