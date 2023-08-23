@@ -57,10 +57,6 @@ export default function Header({
                           href="https://saferoadclub.gitbook.io/safe-road-club-open-beta/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          onClick={(e)=>{
-                            e.preventDefault();
-                            alertArea();
-                          }}
                         >
                           <span className='hidden'>깃북</span>
                         </a>
